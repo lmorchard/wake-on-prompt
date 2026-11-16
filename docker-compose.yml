@@ -1,0 +1,9 @@
+services:
+  wake-on-prompt:
+    build: .
+    image: wake-on-prompt:latest
+    restart: unless-stopped
+    # host networking is required for Wake-on-LAN broadcast packets to reach physical LAN
+    network_mode: host
+    volumes:
+      - ./config.example.json:/etc/wake-on-prompt/config.json:ro

@@ -1,0 +1,32 @@
+{
+  "broadcast_ips": [
+    "255.255.255.255",
+    "192.168.123.255"
+  ],
+  "endpoints": [
+    {
+      "name": "flint-sync",
+      "listen_port": 8081,
+      "target_host": "192.168.123.242",
+      "target_port": 8080,
+      "mac_address": "b4:2e:99:a0:5b:01",
+      "wake_timeout": 10.0
+    },
+    {
+      "name": "flint-lazy",
+      "listen_port": 8082,
+      "target_host": "192.168.123.242",
+      "target_port": 8080,
+      "mac_address": "b4:2e:99:a0:5b:01",
+      "wake_timeout": 0.0
+    },
+    {
+      "name": "ollama-sync",
+      "listen_port": 11435,
+      "target_host": "192.168.123.242",
+      "target_port": 11434,
+      "mac_address": "b4:2e:99:a0:5b:01",
+      "wake_timeout": 10.0
+    }
+  ]
+}
